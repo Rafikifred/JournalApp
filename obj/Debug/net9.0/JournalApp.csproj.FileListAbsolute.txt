@@ -1,0 +1,14 @@
+C:\Users\Cyusa tech\Desktop\JournalApp\bin\Debug\net9.0\JournalApp.exe
+C:\Users\Cyusa tech\Desktop\JournalApp\bin\Debug\net9.0\JournalApp.deps.json
+C:\Users\Cyusa tech\Desktop\JournalApp\bin\Debug\net9.0\JournalApp.runtimeconfig.json
+C:\Users\Cyusa tech\Desktop\JournalApp\bin\Debug\net9.0\JournalApp.dll
+C:\Users\Cyusa tech\Desktop\JournalApp\bin\Debug\net9.0\JournalApp.pdb
+C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\JournalApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\JournalApp.AssemblyInfoInputs.cache
+C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\JournalApp.AssemblyInfo.cs
+C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\JournalApp.csproj.CoreCompileInputs.cache
+C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\JournalApp.dll
+C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\refint\JournalApp.dll
+C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\JournalApp.pdb
+C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\JournalApp.genruntimeconfig.cache
+C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\ref\JournalApp.dll
