@@ -12,3 +12,4 @@ C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\refint\JournalApp.dll
 C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\JournalApp.pdb
 C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\JournalApp.genruntimeconfig.cache
 C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\ref\JournalApp.dll
+C:\Users\Cyusa tech\Desktop\JournalApp\obj\Debug\net9.0\JournalApp.sourcelink.json
