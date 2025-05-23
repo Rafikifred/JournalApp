@@ -2,19 +2,30 @@ using System;
 
 public class Entry
 {
-    public string Date { get; set; }
-    public string Prompt { get; set; }
-    public string Text { get; set; }
+    public string _date;
+    public string _promptText;
+    public string _entryText;
 
-    public Entry(string prompt, string text)
+    public Entry(string prompt, string entry)
     {
-        Date = DateTime.Now.ToString("yyyy-MM-dd");
-        Prompt = prompt;
-        Text = text;
+        _date = DateTime.Now.ToString("yyyy-MM-dd");
+        _promptText = prompt;
+        _entryText = entry;
     }
 
-    public override string ToString()
+    public string Display()
     {
-        return $"Date: {Date}\nPrompt: {Prompt}\nEntry: {Text}\n";
+        return $"{_date} - Prompt: {_promptText}\nResponse: {_entryText}\n";
+    }
+
+    public string ToFileFormat()
+    {
+        return $"{_date}|{_promptText}|{_entryText}";
+    }
+
+    public static Entry FromFileFormat(string line)
+    {
+        string[] parts = line.Split('|');
+        return new Entry(parts[1], parts[2]) { _date = parts[0] };
     }
 }
