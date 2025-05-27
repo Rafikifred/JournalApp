@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JournalApp</name>
+    </assembly>
+    <members>
+        <member name="T:Entry">
+            <summary>
+            Represents a single journal entry.
+            </summary>
+        </member>
+        <member name="F:Entry._date">
+            <summary>
+            The date the entry was created.
+            </summary>
+        </member>
+        <member name="F:Entry._promptText">
+            <summary>
+            The prompt used for the entry.
+            </summary>
+        </member>
+        <member name="F:Entry._entryText">
+            <summary>
+            The user's response.
+            </summary>
+        </member>
+        <member name="M:Entry.#ctor(System.String,System.String)">
+            <summary>
+            Creates a new journal entry with a prompt and user input.
+            </summary>
+        </member>
+        <member name="M:Entry.Display">
+            <summary>
+            Returns a formatted string for display.
+            </summary>
+        </member>
+        <member name="M:Entry.ToFileFormat">
+            <summary>
+            Returns a string formatted for saving to a file.
+            </summary>
+        </member>
+        <member name="M:Entry.FromFileFormat(System.String)">
+            <summary>
+            Parses an entry from a file-formatted string.
+            </summary>
+        </member>
+        <member name="T:Journal">
+            <summary>
+            Represents the user's journal.
+            </summary>
+        </member>
+        <member name="M:Journal.WriteNewEntry">
+            <summary>
+            Prompts the user to write a new journal entry.
+            </summary>
+        </member>
+        <member name="M:Journal.DisplayJournal">
+            <summary>
+            Displays all journal entries.
+            </summary>
+        </member>
+        <member name="M:Journal.SaveToFile(System.String)">
+            <summary>
+            Saves journal entries to a file.
+            </summary>
+        </member>
+        <member name="M:Journal.LoadFromFile(System.String)">
+            <summary>
+            Loads journal entries from a file.
+            </summary>
+        </member>
+        <member name="T:Program">
+            <summary>
+            The main program class.
+            </summary>
+        </member>
+        <member name="T:PromptGenerator">
+            <summary>
+            Provides random prompts for journal entries.
+            </summary>
+        </member>
+        <member name="M:PromptGenerator.GetRandomPrompt">
+            <summary>
+            Gets a random prompt from the list.
+            </summary>
+        </member>
+    </members>
+</doc>

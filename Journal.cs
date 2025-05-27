@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
+/// <summary>
+/// Represents the user's journal.
+/// </summary>
 public class Journal
 {
     private List<Entry> _entries = new List<Entry>();
@@ -14,18 +17,30 @@ public class Journal
         "If I had one thing I could do over today, what would it be?"
     };
 
+    /// <summary>
+    /// Prompts the user to write a new journal entry.
+    /// </summary>
     public void WriteNewEntry()
     {
         Random rnd = new Random();
         string prompt = _prompts[rnd.Next(_prompts.Count)];
         Console.WriteLine($"Prompt: {prompt}");
         Console.Write("> ");
-        string response = Console.ReadLine();
+        string? response = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(response))
+        {
+            Console.WriteLine("Entry cannot be empty.");
+            return;
+        }
 
         Entry newEntry = new Entry(prompt, response);
         _entries.Add(newEntry);
     }
 
+    /// <summary>
+    /// Displays all journal entries.
+    /// </summary>
     public void DisplayJournal()
     {
         foreach (Entry entry in _entries)
@@ -34,6 +49,9 @@ public class Journal
         }
     }
 
+    /// <summary>
+    /// Saves journal entries to a file.
+    /// </summary>
     public void SaveToFile(string filename)
     {
         using (StreamWriter outputFile = new StreamWriter(filename))
@@ -46,6 +64,9 @@ public class Journal
         Console.WriteLine("Journal saved successfully.");
     }
 
+    /// <summary>
+    /// Loads journal entries from a file.
+    /// </summary>
     public void LoadFromFile(string filename)
     {
         if (File.Exists(filename))

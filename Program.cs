@@ -1,5 +1,8 @@
 ﻿using System;
 
+/// <summary>
+/// The main program class.
+/// </summary>
 class Program
 {
     static void Main(string[] args)
@@ -17,7 +20,7 @@ class Program
             Console.WriteLine("5. Exit");
             Console.Write("Select an option: ");
 
-            string choice = Console.ReadLine();
+            string? choice = Console.ReadLine();
 
             switch (choice)
             {
@@ -29,13 +32,19 @@ class Program
                     break;
                 case "3":
                     Console.Write("Enter filename to save: ");
-                    string saveFile = Console.ReadLine();
-                    myJournal.SaveToFile(saveFile);
+                    string? saveFile = Console.ReadLine();
+                    if (!string.IsNullOrWhiteSpace(saveFile))
+                    {
+                        myJournal.SaveToFile(saveFile);
+                    }
                     break;
                 case "4":
                     Console.Write("Enter filename to load: ");
-                    string loadFile = Console.ReadLine();
-                    myJournal.LoadFromFile(loadFile);
+                    string? loadFile = Console.ReadLine();
+                    if (!string.IsNullOrWhiteSpace(loadFile))
+                    {
+                        myJournal.LoadFromFile(loadFile);
+                    }
                     break;
                 case "5":
                     running = false;
